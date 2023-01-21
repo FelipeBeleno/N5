@@ -21,7 +21,6 @@ export const Home = () => {
                 dispatch(disable())
             }, 2500);
         }
-
     }, [state.notification.status])
 
 

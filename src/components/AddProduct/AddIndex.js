@@ -141,6 +141,15 @@ export const AddIndex = () => {
             })
         )
 
+        setDataForm(
+            {
+                "name": "",
+                "price": "",
+                "amount": "",
+                "id": ""
+            }
+        )
+
     }
 
     return (
