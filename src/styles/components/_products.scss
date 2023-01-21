@@ -1,0 +1,135 @@
+.products_title_container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    img {
+        width: 15em;
+        height: 15em;
+        position: relative;
+        bottom: 2em;
+        right: 2em;
+    }
+
+}
+
+.products_index_container {
+    max-height: 20rem;
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 2em;
+}
+
+.products_index_searcher {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.products_index_itemslist {
+    height: 100% !important;
+}
+
+.products_index_item {
+    display: flex;
+    width: 80%;
+
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    border-radius: $border-radius;
+    img {
+        height: 7em;
+        position: absolute;
+        top: 0px;
+        right: 45px;
+    }
+
+    position: relative;
+
+
+}
+
+.products_index_item_secondsecction {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.products_index_item_secondsecction_buttons {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+@media(min-width: 1450px) {
+    .products_index_container {
+        max-height: 100% !important;
+        height: auto !important;
+    }
+
+    .products_index_item{
+        img{
+            position: initial;
+        }
+    }
+}
+
+
+@media(max-width: 1450px) and (min-width: 900px) {
+
+
+    .products_title_container {
+        flex-wrap: nowrap;
+    }
+
+    .products_index_container {
+        width: 100% !important;
+        max-height: 100% !important;
+        height: 1000px !important;
+        margin-bottom: 100px;
+    }
+
+}
+
+@media(max-width: 900px) {
+
+    .products_title_container {
+        img {
+            display: none;
+        }
+    }
+
+    .products_index_item_secondsecction {
+        img {
+
+            height: 7em;
+            position: absolute;
+            top: 0px;
+            right: 45px;
+        }
+    }
+
+
+    .products_index_item_secondsecction {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .products_index_container {
+        width: 100% !important;
+        max-height: 100% !important;
+        height: 1000px !important;
+        margin-bottom: 100px;
+    }
+
+
+    .products_index_item {
+        display: flex;
+        width: 100%;
+    }
+}

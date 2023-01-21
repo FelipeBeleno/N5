@@ -1,0 +1,21 @@
+
+
+.car_contentlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 2em;
+}
+
+.car_contentlist_item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.car_contentlist_item_actionbar{
+    display: flex;
+}
+.car_removeicon{
+    display: flex;
+    justify-content: center;
+}
